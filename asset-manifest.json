@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kpi-projects-pizza/static/css/main.a2c37824.css",
+    "main.js": "/kpi-projects-pizza/static/js/main.f11a413d.js",
+    "static/js/787.6f5742fd.chunk.js": "/kpi-projects-pizza/static/js/787.6f5742fd.chunk.js",
+    "static/media/icomoon.svg?58jere": "/kpi-projects-pizza/static/media/icomoon.5b9c118278a03fdff4ba.svg",
+    "static/media/icomoon.eot?58jere": "/kpi-projects-pizza/static/media/icomoon.49ae920f1ec463bc6428.eot",
+    "static/media/icomoon.woff?58jere": "/kpi-projects-pizza/static/media/icomoon.f1ec77a607677a9e19bf.woff",
+    "static/media/icomoon.ttf?58jere": "/kpi-projects-pizza/static/media/icomoon.dc8bcf6377174b12d897.ttf",
+    "index.html": "/kpi-projects-pizza/index.html",
+    "main.a2c37824.css.map": "/kpi-projects-pizza/static/css/main.a2c37824.css.map",
+    "main.f11a413d.js.map": "/kpi-projects-pizza/static/js/main.f11a413d.js.map",
+    "787.6f5742fd.chunk.js.map": "/kpi-projects-pizza/static/js/787.6f5742fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2c37824.css",
+    "static/js/main.f11a413d.js"
+  ]
+}
