@@ -138,6 +138,10 @@ body {
 	}
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";
