@@ -1,0 +1,174 @@
+//====================================================================================================
+@use 'sass:math';
+@import "base/mixins";
+.header {
+  @include adaptiveValue("padding-top", 49, 20);
+  @include adaptiveValue("padding-bottom", 40, 20);
+  border-bottom: rem(1) solid #c9c6c6;
+  &__container {
+
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(12);
+    &:not(:last-child) {
+        margin-bottom: rem(20);
+     }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 17, 10);
+  }
+  &__img {
+    img {
+      @include adaptiveValue("width", 38, 25, 560, 320, 1);
+      @include adaptiveValue("height", 38, 25, 560, 320, 1);
+    }
+  }
+  &__info {
+
+  }
+  &__title {
+    color: #181818;
+    font-weight: 800;
+    @include adaptiveValue("font-size", 24, 16);
+    text-transform: uppercase;
+    line-height: math.div(29 , 24);
+  }
+  &__text {
+    color: #7B7B7B;
+    @include adaptiveValue("font-size", 16, 14);
+    line-height: math.div(19 , 16);
+  }
+  &__tools {
+    background-color: $orangeColor;
+    color: #fff;
+    font-weight: 700;
+    border-radius: rem(35);
+    padding: rem(10);
+    font-size: rem(16);
+    line-height: math.div(19 , 16);
+    -webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+        &:hover {
+            background: #8d3716;
+        }
+    }
+    @media (min-width: em(560)) {
+      display: flex;
+      padding: rem(15) rem(23) rem(15) rem(23);
+      justify-content: space-between;
+      align-items: center;
+      border-radius: rem(30);
+    }
+  }
+  &__price {
+    @media (max-width: em(560)) {
+      display: none;
+    }
+    &::after {
+      content:'';
+      padding-left: rem(12);
+      border-right: rem(1) solid #fff;
+    }
+  }
+  &__cart {
+    font-weight: 700;
+    &::before {
+        padding-right: rem(8);
+        @media (min-width: em(560)) {
+          padding-left: rem(12);
+        }
+
+    }
+  }
+  &__form {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border: rem(1) solid #a6a4a4;
+    border-radius: rem(10);
+    flex: 0 0 rem(450);
+    height: rem(50);
+  }
+  &__input {
+    flex: 1 1 auto;
+    outline: none;
+    width: 100%;
+    font-size: rem(16);
+    color: $mainDarkColor;
+    &::placeholder {
+      color: #a6a4a4;
+      font-size: rem(16);
+    }
+  }
+  &__search {
+    &::before {
+        font-size: rem(18);
+      padding: 0 rem(15);
+    }
+  }
+  &__clear {
+    flex: 0 0 rem(50);
+    height: rem(50);
+    &::before {
+        display: block;
+        transform: rotate(45deg);
+    }
+  }
+}
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/
